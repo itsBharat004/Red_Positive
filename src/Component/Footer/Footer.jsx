@@ -5,6 +5,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import CopyrightIcon from '@mui/icons-material/Copyright';
 const Footer = () => {
   return (
     <div className="footerSection">
@@ -505,6 +507,10 @@ const Footer = () => {
       
       </div>
     </div>
+    <h4  className='createBy'><CopyrightIcon/> Made by Yash gupta 
+    <span> <FavoriteIcon/></span> 
+    </h4>
+  
     </div>
   )
 }

@@ -30,11 +30,6 @@ const Services = () => {
           })
         }
     </div>
-    {/* {
-       currentProductObj=ProductData.find((item)=>{
-        item.id==currentProdunctIndex;
-      })
-    } */}
     <ServicesGenricCompo value={{...ProductDatas[currentProdunctIndex]}}/>
     </div>
   )

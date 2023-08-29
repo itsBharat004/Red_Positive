@@ -22,7 +22,6 @@ const Contact = () => {
     const handleSubmit=(e)=>{
         
         e.preventDefault(); 
-        // emailjs.sendForm('service_l8u32ft', 'template_ucy6fnk',form.current, '7MWnsbWHW9H6kN-yX')
         var templateParams = {
             user_name:name,
             user_email:email,

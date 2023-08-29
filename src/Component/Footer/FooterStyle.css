@@ -141,6 +141,13 @@ position: relative;
     grid-column: 1/1;
 }
 }
+.createBy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    border-top:2px solid #ffffff;
+}
 @media (max-width:400px) {
     .footer{
         /* padding: 2px; */

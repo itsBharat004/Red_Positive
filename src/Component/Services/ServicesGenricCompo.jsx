@@ -14,19 +14,19 @@ const ServicesGenricCompo = ({value}) => {
       {/* subheading1 */}
         {value?.subHeading1&&<h2 className='ServicesGenricCompoSecondSubHeading'>{value?.subHeading1}</h2>}
         {value?.subHeading1Img1&&<h2 className='ServicesGenricCompoSecondSubHeadingImgs'>
-           <img className='ServicesGenricCompoSecondSubHeadingImg' src={value?.subHeading1Img1} alt="not found" />
-           <img className='ServicesGenricCompoSecondSubHeadingImg' src={value?.subHeading1Img2} alt="not found" />
-           <img className='ServicesGenricCompoSecondSubHeadingImg' src={value?.subHeading1Img3} alt="not found" />
-           <img className='ServicesGenricCompoSecondSubHeadingImg' src={value?.subHeading1Img4} alt="not found" />
+           <div className='ServicesGenricCompoSecondSubHeadingImg'><img  src={value?.subHeading1Img1} alt="not found" /></div>
+           <div className='ServicesGenricCompoSecondSubHeadingImg'><img  src={value?.subHeading1Img2} alt="not found" /></div>
+           <div className='ServicesGenricCompoSecondSubHeadingImg'><img  src={value?.subHeading1Img3} alt="not found" /></div>
+           <div className='ServicesGenricCompoSecondSubHeadingImg'><img  src={value?.subHeading1Img4} alt="not found" /></div>
         </h2>}
        { value?.subHeading1Des&&<p className='ServicesGenricCompoSecondSubHeadingDec'>{value?.subHeading1Des}</p>}
       {/* subheading2 */}
       {value?.subHeading2 && <h2 className='ServicesGenricCompoSecondSubHeading'>{value?.subHeading2}</h2>}
         {value?.subHeading2Img1&& <h2 className='ServicesGenricCompoSecondSubHeadingImgs'>
-            <img className='ServicesGenricCompoSecondSubHeadingImg' src={value?.subHeading2Img1} alt="not found" />
-           <img className='ServicesGenricCompoSecondSubHeadingImg' src={value?.subHeading2Img2} alt="not found" />
-           <img className='ServicesGenricCompoSecondSubHeadingImg' src={value?.subHeading2Img3} alt="not found" />
-           <img className='ServicesGenricCompoSecondSubHeadingImg' src={value?.subHeading2Img4} alt="not found" />  
+          <div className='ServicesGenricCompoSecondSubHeadingImg'> <img  src={value?.subHeading2Img1} alt="not found" /></div>
+          <div className='ServicesGenricCompoSecondSubHeadingImg'> <img  src={value?.subHeading2Img2} alt="not found" /></div>
+          <div className='ServicesGenricCompoSecondSubHeadingImg'> <img  src={value?.subHeading2Img3} alt="not found" /></div>
+          <div className='ServicesGenricCompoSecondSubHeadingImg'> <img  src={value?.subHeading2Img4} alt="not found" /></div>  
         </h2>}
         {value?.subHeading2Des&&<p className='ServicesGenricCompoSecondSubHeadingDec'> {value?.subHeading2Des}</p>}
       {/* subheading 3 */}

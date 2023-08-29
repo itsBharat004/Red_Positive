@@ -1,7 +1,8 @@
-.team {
+.teamCard {
   background-color: #f5f5f5;
   padding-bottom: 144px;
 }
+
 .teamHeading {
   color: #aa1313;
   font-size: 1.5rem;
@@ -28,39 +29,47 @@
   padding-bottom: 4rem;
   text-align: center;
 }
+.coreHeading{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 /* ------------------card--------------------- */
-.row1{
-    display: flex;
-    width: 90%;
-    margin: auto;
-    /* justify-content: space-between; */
-    flex-wrap: nowrap;
+.row1,
+.row2 {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  /* justify-content: space-between; */
+  flex-wrap: nowrap;
 }
-.row1Cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:50%;
-    /* min-width: 300px; */
-    margin: 1px;
+.row1Cards,
+.row2Cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  /* min-width: 300px; */
+  margin: 1px;
 }
+
 .teamCard {
-    display: block;
-    margin: 2px;
+  display: block;
+  margin: 2px;
   background-color: white;
   max-width: 300px;
   min-width: 220px;
   /* width: 300px; */
   max-height: 400px;
   height: 31rem;
-  border-radius:10px;
+  border-radius: 10px;
   box-shadow: 0px 0px 10px 8px #d8d8d8;
 }
 
 .teamCardImg {
   display: block;
   width: 140px;
-  margin:auto;
+  margin: auto;
   padding: 32px 0;
   height: 140px;
 }
@@ -71,9 +80,9 @@
   font-family: Poppins, sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
-   white-space: wrap;
-   width: 200px;
-   text-align: center;
+  white-space: wrap;
+  width: 200px;
+  text-align: center;
 }
 .teamCardDesignation {
   text-align: center;
@@ -97,7 +106,6 @@
   height: 100px;
   align-items: center;
 }
-
 .teamCardSkillBar {
   width: 100%;
   min-height: 65px;
@@ -117,34 +125,171 @@
   align-items: center;
   justify-content: center;
 }
-
+.leftBtnRow1,
+.leftBtnRow2,
+.rightBtnRow1,
+.rightBtnRow2{
+display: none;
+}
 /* -----------------card responsiveness------------------------ */
-@media (max-width:750px) {
-    /* .row1{
-        display:inline-block;
-        width: 90%;
-        white-space: nowrap;
+@media (max-width: 500px) {
+  .teamCardSkill {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 760px) {
+  .teamCard {
+    height: 300px;
+  }
+  .row1 {
+    display: flex;
+    width: 200%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    transform: translateX(0%);
+  }
+  #row1Forward{
+    transform: translateX(-50%);
+    animation: row1First 0.5s ease-in  1 reverse forwards;
+  }
+  @keyframes row1First {
+    100%{
+    transform: translateX(0%);
     }
-    .row1Cards{
-        display: inline-block;
-        align-items: center;
-        width:100vw;
-    height: 100%;
-        margin: auto;
-    } */
-    .row1{
-        display: flex;
-        width: 200%;
-        margin: auto;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+  }
+  #row1Backward{
+    transform: translateX(0%);
+    animation: row1Second 0.5s ease-in 1 reverse forwards;
+    
+  }
+  @keyframes row1Second {
+    100%{
+    transform: translateX(50%);
     }
-    .row1Cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: auto;
-    }
+  }
+  .TeamContainer1,
+  .TeamContainer2{
+width: 100%;
+/* background-color: aqua; */
+position: relative;
+  }
+.leftBtnRow1,
+.leftBtnRow2{
+  position: absolute;
+  left: 5%;
+  top:50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  z-index: 9;
+
+}
+.rightBtnRow1,
+.rightBtnRow2{
+  position: absolute;
+  right: 5%;
+  top:50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  z-index: 9;
+
+}
+
+  .row1Cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid green; */
+
+  }
+.row2{
+  display: flex;
+  width: 300%;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  transform: translateX(0);
+}
+/* backward of row 1 */
+#row2Forward1{
+  animation: row2Forward1 0.5s ease-in 1 forwards;  
+}
+@keyframes row2Forward1{
+  100%{
+  transform: translateX(-33.33%);
+  }
+}
+#row2Forward2{
+  animation: row2Forward2 0.5s ease-in 1 forwards;  
+}
+@keyframes row2Forward2 {
+  0%{
+    transform: translateX(-33.33%);
   
+    }
+  100%{
+  transform: translateX(-66.66%);
+  }
+}
+
+#row2Forward3{
+  animation: row2Forward3 0.5s ease-in 1 forwards;  
+}
+@keyframes row2Forward3 {
+  0%{
+  transform: translateX(33.33%);
+
+  }
+  100%{
+  transform: translateX(0%);
+  }
+}
+/* backward of row 2 */
+#row2Backward1{
+  animation: row2Backward1 0.5s ease-in 1 forwards;  
+}
+@keyframes row2Backward1{
+  0%{
+  transform: translateX(-100%);
+  }
+  100%{
+  transform: translateX(-66.66%);
+  }
+}
+#row2Backward2{
+  animation: row2Backward2 0.5s ease-in 1 forwards;  
+}
+@keyframes row2Backward2{
+  0%{
+  transform: translateX(-33.33%);
+  }
+  100%{
+  transform: translateX(0%);
+  }
+}
+#row2Backward3{
+  animation: row2Backward3 0.5s ease-in 1 forwards;  
+}
+@keyframes row2Backward3{
+  0%{
+  transform: translateX(-66.66%);
+  }
+  100%{
+  transform: translateX(-33.33%);
+  }
+}
+.row1Cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  /* border: 2px solid rgb(2, 0, 128); */
+}
 }
