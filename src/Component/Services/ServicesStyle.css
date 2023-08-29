@@ -1,0 +1,307 @@
+.services{
+    background-color: rgba(244,11,81,.03);
+    position: relative;
+    padding-bottom: 10rem;
+    padding-top: 3rem;
+    
+}
+
+.services h1{
+    margin:30px auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 32px;
+}
+.servicesheading{
+
+    color: black;
+    background-image: linear-gradient(#aa1313 0 0);
+    background-position: bottom left; /*Adjust the background-position to move the line*/
+    background-size: 60% 2px; /*Adjust the background size to control length and height*/
+    background-repeat: no-repeat;
+    padding-bottom: 4px;
+}
+.servicesheading2{
+    color:#aa1313;
+  
+}
+/* ------------------service card------------------- */
+.servicesCards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.servicesCard{
+    position: relative;
+    width: 304px;
+    height: 336px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 60px rgba(170,19,19,.25);
+}
+.servicesCardBorderImg{
+    position: absolute;
+    width: 53px;
+    height: 43px;
+    top: 0px;
+    left: 0px;
+    /* transform: translate(50%,50%); */
+    /* transform: translateY(64%); */
+}
+.servicesCardImg{
+    width: 110px;
+    height: 110px;
+    margin-top:32px ;
+}
+.servicesCardBody{
+    padding: 16px;
+}
+.servicesCardTitle{
+    color: #aa1313;
+    font-family: Nunito,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+}
+.servicesCardDes{
+    color: rgba(0,0,0,.85);
+    font-family: Poppins,sans-serif;
+    font-size: .625rem;
+    font-weight: 400;
+    line-height: 15px;
+    padding: 1rem 1.5rem;
+    text-align: justify;
+}
+@media (max-width:903px) {
+    
+.services h1{
+    font-size: 1.5rem;
+    line-height: 22px;
+}
+    .servicesCards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        justify-content: center;
+    } 
+    .servicesCard{
+        margin: 20px auto;
+        position: relative;
+        width: 165px;
+        height:236px;
+        
+    }
+    .servicesCardBorderImg{
+        width: 30px;
+        height: 26px;
+    }
+    .servicesCardImg{
+        width: 65px;
+        height: 55px;
+        margin-top: 16px;
+    }
+    .servicesCardTitle{
+        font-size: 0.8rem;
+        line-height: 15px;
+    }
+    .servicesCardDes{
+        font-size: .6rem;
+        line-height: 12px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width:403px) {
+ 
+    .servicesCards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        justify-content: center;
+    } 
+    .servicesCard{
+        margin: 20px auto;
+        position: relative;
+        width: 115px;
+        height: 176px;
+     
+    }
+    .servicesCardBorderImg{
+        width: 23px;
+        height: 19px;
+    }
+    .servicesCardImg{
+        width: 54px;
+        height: 45px;
+        margin-top: 16px;
+    }
+    .servicesCardTitle{
+        font-size: .6rem;
+        line-height: 10px;
+    }
+    .servicesCardDes{
+        font-size: .375rem;
+        line-height: 9px;
+        padding: 0;
+    }
+ 
+
+}
+/* --------------------Services GenricCompo---------------------- */
+.ServicesGenricCompo{
+    display: flex;
+    justify-content: center;
+}
+.ServicesGenricCompoFirst{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.ServicesGenricCompoFirstImg{
+    width: 100%;
+    max-width: 500px;
+    max-height:500px;
+}
+.ServicesGenricCompoSecond{
+    width: 45%;
+}
+.ServicesGenricCompoSecondHeading{
+    color: #aa1313;
+    font-family: Nunito,sans-serif;
+    font-size: 1.438rem;
+    font-weight: 600;
+    line-height: 31px;
+    
+}
+.ServicesGenricCompoSecondSubTitle{
+    margin: auto;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg,#000,#f40b51);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: Nunito,sans-serif;
+    font-size: 1.375rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.ServicesGenricCompoSecondSubTitleDes{
+    color: rgba(0,0,0,.85);
+    font-family: Poppins,sans-serif;
+    font-size: .938rem;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+}
+.ServicesGenricCompoSecondSubHeading{
+    color: #aa1313;
+    font-family: Nunito,sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.ServicesGenricCompoSecondSubHeadingDes{
+    color: rgba(0,0,0,.85);
+    font-family: Nunito,sans-serif;
+    font-size: .938rem;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.ServicesGenricCompoSecondSubHeadingImgs{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ServicesGenricCompoSecondSubHeadingImg{
+    max-width: 100px;
+    width: 25%;
+    height: 100px;
+}
+/* for blood wala extra compo */
+.ServicesGenricCompoSecondSubHeadingImg3{
+    max-width: 500px;
+    min-width: 220px;
+    max-height: 304px;
+    min-height: 170px;
+}
+.ServicesGenricCompoSecondSubHeading4,
+.ServicesGenricCompoSecondSubHeading5{
+    text-align: center;
+    margin: auto;
+}
+.ServicesGenricCompoSecondSubHeadingImgsDots{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ServicesGenricCompoSecondSubHeadingImgDot{
+    max-width: 217px;
+    max-height: 167px;
+}
+.arrows{
+    display: flex;
+    max-height: 167px;
+    align-items: center;
+}
+.arrow{
+    width: 9px;
+    height: 15px;
+}
+
+@media (max-width:750px) {
+    .ServicesGenricCompo{
+        flex-direction: column;
+    }
+    .ServicesGenricCompoFirst{
+        width: 90%;
+        margin: auto;
+        
+    }
+    
+    .ServicesGenricCompoSecond{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media (max-width:560px) {
+    .ServicesGenricCompoSecondSubHeadingImg3{
+        max-width: 500px;
+        min-width: 220px;
+        max-height: 304px;
+        min-height: 170px;
+    }
+    .ServicesGenricCompoSecondSubHeading4,
+    .ServicesGenricCompoSecondSubHeading5{
+        font-size: .75rem;
+        line-height: 18px;
+    }
+    
+
+    .ServicesGenricCompoSecondSubHeadingImgDot{
+        max-width: 73px;
+         max-height: 56px;
+    }
+    .arrows{
+        min-height: 56px;
+    }
+    .arrow{
+        width: 3px;
+        height: 4px;
+    }
+    
+}

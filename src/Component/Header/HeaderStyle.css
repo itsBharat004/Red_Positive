@@ -1,0 +1,196 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.leftHeader{
+    position: relative;
+   display: flex;
+   align-items: center;
+   /* justify-content: center; */
+    width: 50%;
+    flex-direction: column;
+}
+.rightHeader{
+    position: relative;
+
+    width: 50%;
+
+}
+.leftHeaderTop{
+    display:flex;
+    /* height: 300px; */
+    width: 100%;
+    align-items: center;
+
+}
+.leftHeaderTitle{
+    display: flex;
+    flex-direction: column;
+}
+.leftHeaderDes{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+.leftHeaderTitleUpper{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(96.19deg,#f40b51 21.89%,#aa1313 54.9%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: Jua,sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(218,77,77,.85);
+    white-space: nowrap;
+
+}
+.leftHeaderTitleLower{
+    font-family: Inter,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    white-space: nowrap;
+
+}
+.leftHeaderDesText{
+    color: #000000;
+    font-family: Jua,sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 50px;
+}
+/* left Header Bg Img */
+.leftHeaderBgImg{
+    position: absolute;
+    left:40%;
+    top: 40%;
+    height: 200px;
+    width: 200px;
+}
+/* Right Header Bg Img */
+.rightHeaderBgImg1{
+    position: absolute;
+    left:-15%;
+    top: 70%;
+    height: 200px;
+    width: 200px;
+}
+.rightHeaderBgImg2{
+    position: absolute;
+    left:80%;
+    top: 80%;
+    height: 100px;
+    width: 100px;
+}
+.rightHeaderImg{
+
+    display: block;
+    /* background: url("https://www.redpositive.in/images/homeblur1.png") no-repeat cover; */
+height: 500px;
+width: 100%;
+}
+@media (max-width:760px){
+    .header{
+       flex-direction: column-reverse;
+       
+    }
+    .leftHeader{
+        width: 90%;
+  margin: auto;
+     }
+     .rightHeader{
+         width: 90%;
+  margin: auto;
+
+     
+     }
+     .leftHeaderTop{
+        justify-content: center;
+  height: 200px;
+
+     }
+     .svgImg{
+        object-fit: cover;
+        height: 300px;
+        max-width: 30%;
+        width: fit-content;
+     }
+     .leftHeaderTitle{
+        max-width: 70%;
+        width: fit-content;
+        
+     }
+     .leftHeaderTitleUpper{
+        width: fit-content;
+        font-size:30px;
+
+     }
+     .leftHeaderTitleLower{
+        font-family: Inter,sans-serif;
+        font-size:12px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    .leftHeaderDesText{
+        
+        font-size:30px;
+
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+@media (max-width:460px){
+    .header{
+       flex-direction: column-reverse;
+       
+    }
+    .leftHeader{
+        width: 90%;
+  margin: auto;
+     }
+     .rightHeader{
+         width: 90%;
+  margin: auto;
+
+     
+     }
+     .leftHeaderTop{
+        justify-content: center;
+  height: 150px;
+
+     }
+     .svgImg{
+        object-fit: cover;
+        /* height: 300px; */
+        max-width: 45%;
+        width: fit-content;
+     }
+     .leftHeaderTitle{
+        max-width: 60%;
+        width: fit-content;
+        
+     }
+     .leftHeaderTitleUpper{
+        width: fit-content;
+        font-size:16px;
+
+     }
+     .leftHeaderTitleLower{
+        font-family: Inter,sans-serif;
+        font-size:10px;
+        font-weight: 400;
+        margin-bottom: 0;
+        white-space: wrap;
+    }
+    .leftHeaderDesText{
+        
+        font-size:16px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
