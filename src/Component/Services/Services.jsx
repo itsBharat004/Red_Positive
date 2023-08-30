@@ -11,7 +11,7 @@ const Services = () => {
   const ProductDatas=useContext(ProductData);
   console.log(CardData)
   return (
-    <div className='services'>
+    <div id='products' className='services'>
       <h1><span>
       <span className='servicesheading'>Excl</span>usive 
       <span className='servicesheading2'> products</span>
