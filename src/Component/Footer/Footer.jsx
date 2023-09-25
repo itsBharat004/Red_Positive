@@ -507,7 +507,7 @@ const Footer = () => {
       
       </div>
     </div>
-    <h4  className='createBy'><CopyrightIcon/> Made by Yash gupta 
+    <h4  className='createBy'><CopyrightIcon/> Made by Bharat Singh Rawat
     <span> <FavoriteIcon/></span> 
     </h4>
   
